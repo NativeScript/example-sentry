@@ -5,6 +5,11 @@ purpose of the file is to pass control to the app’s first module.
 */
 
 import { Application } from '@nativescript/core'
+import { initSentry } from './sentry'
+
+Application.on('launch', () => {
+  initSentry();
+});
 
 Application.run({ moduleName: 'app-root' })
 

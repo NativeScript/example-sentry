@@ -1,9 +1,9 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
     <ActionBar title="My App" icon="" />
 
-    <StackLayout class="p-20">
-        <Label text="Tap the button" class="h1 text-center" />
-        <Button text="TAP" tap="{{ onTap }}" class="-primary" />
-        <Label text="{{ message }}" class="h2 text-center" textWrap="true" />
+    <StackLayout class="p-8">
+        <Label text="Tap the button" class="text-2xl text-black font-bold text-center" />
+        <Button text="TAP" tap="{{ onTap }}" class="rounded-full p-4 text-xl text-white bg-blue-500 my-4" />
+        <Label text="{{ message }}" class="text-lg text-center text-gray-500" textWrap="true" />
     </StackLayout>
 </Page>

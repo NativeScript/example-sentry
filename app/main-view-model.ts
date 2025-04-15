@@ -26,6 +26,9 @@ export class HelloWorldModel extends Observable {
   onTap() {
     this._counter--
     this.updateMessage()
+    const crash = new java.lang.String(null);
+    // const crash = NSString.stringWithString(null);
+    // throw new Error('Intentional crash for Sentry testing');
   }
 
   private updateMessage() {
