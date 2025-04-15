@@ -32,11 +32,11 @@ export class HelloWorldModel extends Observable {
 
     // Test B: Test Native crash
     // comment test a above and uncomment below
-    if (__ANDROID__) {
-      const crash = new java.lang.String(null);
-    } else if (__APPLE__) {
-      const crash = NSString.stringWithString(null);
-    }
+    // if (__ANDROID__) {
+    //   const crash = new java.lang.String(null);
+    // } else if (__APPLE__) {
+    //   const crash = NSString.stringWithString(null);
+    // }
   }
 
   private updateMessage() {
